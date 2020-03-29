@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
+import logo from "./logo.svg"
 
 import './Menu.css';
 
@@ -18,7 +19,7 @@ class Menu extends React.Component{
 
   render() {
     const menu = [
-        <div className="text-right">
+        <div className="menu-button">
           <Button variant="outline-light"
                   onClick={() => this.setState({hide: this.state.hide ? false : true})}>
             <FontAwesomeIcon icon={ faBars }
@@ -46,13 +47,17 @@ class Menu extends React.Component{
     }
 
     return(
-      <div className={divclass}>
-        <div className="custom-nav">
-          {menu}
+      <>
+        <div>
+          <img src={logo}/>
         </div>
-      </div>
+        <div className={divclass}>
+          <div className="custom-nav">
+            {menu}
+          </div>
+        </div>
+      </>
     )
-
   }
 }
 

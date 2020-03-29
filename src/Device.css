@@ -1,9 +1,14 @@
 .custom-button {
-    margin: 10px;
+  margin: 10px;
+}
+
+.custom-carousel {
+  margin: 10px;
+  width: 100%;
 }
 
 .custom-manual {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .on {
@@ -16,8 +21,8 @@
 .off {
   border-color: #343a40;
   border-radius: 3px;
-  margin-right: 20px;
-  padding-right: 30px;
+  margin-right: 19px;
+  padding-right: 29px;
   border: 1px solid;
 }
 

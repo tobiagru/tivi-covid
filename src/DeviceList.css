@@ -7,7 +7,7 @@
   text-align: left;
 }
 
-.on {
+.on-sm {
   background-color: #1e7e34;
   border-radius: 3px;
   padding-top: 6px;
@@ -15,13 +15,16 @@
   font-size: small;
 }
 
-.off {
-  padding-top: 6px;
-  padding-bottom: 6px;
+.off-sm {
+  border-color: #343a40;
+  border: 1px solid;
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-size: small;
 }
 
-.maintenance {
+.maintenance-sm {
   background-color: #ffc107;
   border-radius: 3px;
   padding-top: 6px;
@@ -29,7 +32,7 @@
   font-size: small;
 }
 
-.outoforder {
+.outoforder-sm {
   background-color: #bd2130;
   border-radius: 3px;
   padding-top: 6px;
@@ -37,4 +40,35 @@
   font-size: small;
 }
 
+.bar-chart {
+  width: 100%;
+  border-radius: 3px;
+  padding: 20px;
+}
 
+.bar {
+  float: left;
+  height: 1em;
+  font-size: x-small;
+}
+
+.on-bar {
+  background-color: #1e7e34;
+}
+
+.off-bar {
+  border-color: #343a40;
+  border: 1px solid;
+}
+
+.maintenance-bar {
+  background-color: #ffc107;
+}
+
+.outoforder-bar {
+  background-color: #bd2130;
+}
+
+.bar-text {
+  float: right;
+}

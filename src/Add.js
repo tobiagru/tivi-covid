@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
 import QRCode from "qrcode.react";
+import Cookies from "universal-cookie";
 
 class Add extends React.Component {
     constructor(props) {
@@ -14,7 +15,45 @@ class Add extends React.Component {
         showQR:false,
         id:"",
         location:"",
+        capacity: "1",
       };
+    }
+
+    addQR(){
+      const cookies = new Cookies();
+      const venti_ids = cookies.get('VENTIS');
+      venti_ids.push(this.state.id);
+      cookies.set('VENTIS', venti_ids, { path: '/' });
+      this.setState({showQR:true});
+      /*const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                  id: this.state.id,
+                  gnm: "",
+                  qr_code: "",
+                  documents: ["https://www.codevscovid19.org/", "https://www.google.com"]
+            })
+        };
+        fetch(`https://venitor.windhager.io/devices/${this.state.id}/events`, requestOptions)
+            .then(response => response.json())
+            .catch(console.log);*/
+      /*const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                  device_id: this.state.id,
+                  device_status: "off",
+                  device_location: this.state.location,
+                  device_geolocation: "",
+                  device_capacity: this.state.capacity,
+                  device_occupancy: 0,
+                  timestamp: ""
+            })
+        };
+        fetch(`https://venitor.windhager.io/devices/${this.state.id}/events`, requestOptions)
+            .then(response => response.json())
+            .catch(console.log);*/
     }
 
     render() {
@@ -25,20 +64,26 @@ class Add extends React.Component {
           <Form>
             <Form.Group>
               <Form.Label>Venti ID</Form.Label>
-              <Form.Control type="id"
+              <Form.Control name="id"
                             placeholder="Enter ID"
                             onChange={ref => this.setState({id: ref.target.value})}/>
             </Form.Group>
             <Form.Group>
               <Form.Label>Location</Form.Label>
-              <Form.Control type="location"
+              <Form.Control name="location"
                             placeholder="Enter Location"
                             onChange={ref => this.setState({location: ref.target.value})}/>
+            </Form.Group>
+            <Form.Group>
+              <Form.Label>Capacity</Form.Label>
+              <Form.Control name="capcity"
+                            placeholder="Enter Capacity"
+                            onChange={ref => this.setState({capacity: ref.target.value})}/>
             </Form.Group>
           </Form>
           <Button variant="secondary"
                   type="submit"
-                  onClick={() => this.setState({showQR:true})}>
+                  onClick={() => this.addQR()}>
             Create
           </Button>
         </Container>
