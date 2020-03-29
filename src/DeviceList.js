@@ -1,7 +1,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button"
+import Button from "react-bootstrap/Button";
 import './All.css';
 import './DeviceList.css';
 import {Link} from "react-router-dom";
@@ -36,11 +36,10 @@ class DeviceList extends React.Component {
               {venti.id}
             </Link>
           </th>
-          <th>
-            <div className={venti.status}>
-              <div className="custom-status">
-                {venti.status}
-              </div>
+          <th className="custom-th-status">
+            <div className="custom-status">
+              <span className={venti.status}/>
+              {venti.status}
             </div>
           </th>
         </tr>

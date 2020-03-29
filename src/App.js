@@ -8,6 +8,7 @@ import {
 import Menu from "./Menu";
 import DeviceList from './DeviceList';
 import Device from './Device';
+import Add from './Add';
 import './App.css';
 
 
@@ -18,9 +19,7 @@ const App = () => (
       <div>
         <Switch>
           <Route path="/device/:id" component={Device}/>
-          <Route path="/add">
-            <h2>ADD -- still missing --</h2>
-          </Route>
+          <Route path="/add" component={Add}/>
           <Route path="/scan">
             <h2>SCAN -- still missing --</h2>
           </Route>
