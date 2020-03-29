@@ -1,0 +1,35 @@
+.menu-icon {
+    color: #ffffff;
+}
+
+.menu-icon:hover {
+    color: #343a40;
+}
+
+.custom-overlay{
+  width: 60%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  background-color: rgba(35,39,43,0.9); /* Black background with opacity */
+}
+
+.custom-menu{
+  position: fixed; /* Sit on top of the page content */
+  top: 0;
+  right: 0;
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.custom-nav{
+    margin: 30px;
+}
+
+.custom-nav-item{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+    background-color: white;
+    color: #343a40;
+    font-size: larger;
+    width: 100%;
+    font-weight: bolder;
+}

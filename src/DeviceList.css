@@ -1,0 +1,36 @@
+.custom-table {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.on {
+  background-color: #1e7e34;
+  border-radius: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: small;
+}
+
+.off {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: small;
+}
+
+.maintenance {
+  background-color: #ffc107;
+  border-radius: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: small;
+}
+
+.outoforder {
+  background-color: #bd2130;
+  border-radius: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: small;
+}
+
+

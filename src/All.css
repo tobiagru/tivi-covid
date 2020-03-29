@@ -1,0 +1,16 @@
+.custom-container {
+    border-radius: 10px;
+    margin: 30px;
+    background: white;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.custom-title {
+    color: white;
+}
+
+.custom-explainer {
+    margin-top: 20px;
+    color: white;
+}

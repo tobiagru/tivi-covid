@@ -1,0 +1,36 @@
+.custom-button {
+    margin: 10px;
+}
+
+.custom-manual {
+    padding-right: 10px;
+}
+
+.on {
+  background-color: #1e7e34;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding-right: 30px;
+}
+
+.off {
+  border-color: #343a40;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding-right: 30px;
+  border: 1px solid;
+}
+
+.maintenance {
+  background-color: #ffc107;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding-right: 30px;
+}
+
+.outoforder {
+  background-color: #bd2130;
+  border-radius: 3px;
+  margin-right: 20px;
+  padding-right: 30px;
+}
