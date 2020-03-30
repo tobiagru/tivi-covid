@@ -1,3 +1,30 @@
+# Tivi - the app to manage your ventilators in the Covid 19 chrisis 
+Real-time Tracking of Ventilators in Switzerland on the Federal, Cantonal and Hospital level for Matching Supply & Demand for these life-saving Devices
+
+This app was created during the CodeVsCovid19 Hackerton and a more detailed explanation is available on the Hackerton Devpost website:
+https://devpost.com/software/tivi
+
+## Inspiration
+Currently decision makers and news outlets are worrying about the supply of ventilators and speculating about their availability in Switzerland and beyond. There are many questions surrounding this issue.
+
+## What it Does
+Tivi provides a real-time tracking and visualization system for crisis inventory management.
+
+## How we built it (Tech Stack):
+* WebApp based on React & Bootstrap with Scandit QR code scanner (https://reactjs.org/ , https://react-bootstrap.github.io/ , https://www.scandit.com/products/web-sdk/)
+* WebServer with REST Interface based on FastAPI (https://github.com/tiangolo/fastapi)
+* Hosted as Docker on Google Cloud Container Engine (https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker) 
+* Hosted SQL Database on Microsoft Azure
+* Analytics Dashboard based on Tableau
+
+## Team
+Mirella Haldimann
+Inna Grijnevitch
+Lukas Altenkamp
+Jonas W
+
+# Setup
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
