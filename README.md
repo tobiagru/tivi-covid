@@ -18,10 +18,11 @@ Tivi provides a real-time tracking and visualization system for crisis inventory
 * Analytics Dashboard based on Tableau
 
 ## Team
-Mirella Haldimann
-Inna Grijnevitch
-Lukas Altenkamp
-Jonas W
+Mirella Haldimann  
+Inna Grijnevitch  
+Lukas Altenkamp  
+Jonas Windhager  
+Tobias Grundmann  
 
 # Setup
 
